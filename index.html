@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <h1>Static Resume Builder</h1>
+    <form id="resume-form">
+        <fieldset>
+        <div id="personal-info">
+            <h1>PERSONAL INFORMATION</h1>
+            <h2>Name</h2>
+            <input type="text" id="Name" placeholder="ENTER YOUR NAME" required>
+            <h2>Email</h2>
+            <input type="email" id="email" placeholder="ENTER YOUR EMAIL" required>
+            <h2>Contact No</h2>
+            <input type="tel" id="contact" placeholder="TYPE YOUR NUMBER" required>
+            <h2>Gender</h2>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">FEMALE</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">MALE</label>
+            <h2>Portfolio Link</h2>
+            <input type="url" id="portfolio" placeholder="YOUR PORTFOLIO LINK" required>
+            <label for="profilePicture"><h2>Profile Picture</h2></label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="summary">
+            <h1>SUMMARY</h1>
+            <h2>About you</h2>
+            <textarea id="summary" placeholder="TELL US ABOUT YOU" rows="4" required></textarea>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="education">
+            <h1>EDUCATION</h1>
+             <textarea name="education" id="education" rows="4" required></textarea>
+        </div>
+        </fieldset>
+        <fieldset>
+        <div class="skills">
+            <h1>SKILLS</h1>
+            <textarea id="skills" placeholder="WRITE YOUR SKILLS" rows="4" required></textarea>
+        </div>
+        </fieldset>
+    <fieldset>
+        <div class="experience">
+            <h1>WORK EXPERIENCE</h1>
+            <textarea placeholder="ADD YOUR EXPERIENCE" required></textarea>
+        </div>
+    </fieldset>
+        <div>
+            <button type="submit" id="submit">SUBMIT</button>
+        </div>
+    </form>
+</body>
+</html>
